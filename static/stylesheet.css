@@ -1,0 +1,71 @@
+body {
+}
+
+#f{
+    background: 
+        url(https://st92.github.io/static/images/leaves_top.png), 
+        url(https://st92.github.io/static/images/leaves_bottom.png),
+        url(https://st92.github.io/static/images/leaves_side.png);
+        
+    background-position: 101% 0px, 0px 101%, 101% 60%;
+    background-repeat: no-repeat;
+    background-size: 50% auto, 100% auto, 3cm auto ;
+}
+
+.toptext {
+    padding-top: .5cm;
+    display: block;
+    width: 50%;
+    height: 6cm;
+}
+
+section.toptext ul {
+    margin: 0;
+    padding: 0;
+}
+
+.toptext li {
+    float: left;
+    list-style: none;
+}
+
+.toptext li:nth-child(2n-1) {
+    clear: left;
+    font-weight: bold;
+}
+
+.toptext li:nth-child(2n) {
+    padding-left: .3em;
+}
+
+#f {
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+}
+
+#f article section h1 {
+    background: gray;
+    border: 3px solid gray;
+    border-radius: 35px;
+    padding-left: 1em;
+    line-height: 30px;
+    /* display: flex; */
+}
+
+#f article section {
+    border: 1px solid red;
+  height: max-content;
+  box-sizing: border-box;
+  width: 50%;
+    margin: 0 0;
+}
+
+#f article {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    place-items: flex-start;
+    flex-wrap: wrap;
+    height: 20cm;
+}
