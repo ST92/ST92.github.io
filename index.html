@@ -5,9 +5,14 @@
 	<meta charset="UTF-8">
 
 	<title>CodePen - A4 CSS page template</title>
-	<link rel="stylesheet" href="/static/stylesheet.css"/>
+	<link rel="stylesheet" href="static/stylesheet.css"/>
 
 	<style>
+		body, page {
+			margin: 0;
+			box-shadow: 0;
+		}
+
 		body {
 			background: rgb(204, 204, 204);
 		}
@@ -50,20 +55,31 @@
 			height: 14.8cm;
 		}
 
+		.utrudniacz {
+			color: rgb(204, 204, 204);
+			width: 0em;
+			display: inline-block;
+		}
+
 		@media print {
 
 			body,
 			page {
 				margin: 0;
 				box-shadow: 0;
+				background-color: white;
+			}
+			.utrudniacz {
+				color: white;
+				width: 0em !important;
+				content: "";
 			}
 		}
 	</style>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
@@ -75,66 +91,71 @@
   ">Marek Spociński</h1>
 			<ul>
 				<li>Urodzony:</li>
-				<li>XXX</li>
+				<li>11 1992</li>
 				<li>Zamieszkały:</li>
-				<li>XXX</li>
+				<li>Gdynia</li>
 				<li>Numer tel:</li>
-				<li>XXX</li>
+				<li>665<span class="utrudniacz">&dollar;</span>022<span class="utrudniacz">&AElig;</span>688</li>
 				<li>Adres mail:</li>
-				<li>XXX</li>
+				<li>m<span class="trudniacz">ar.</span>eksp92+<span class="trudniacz">sie</span><span class="utrudniacz">wie</span>@gmail.com</li>
 				<li>Wizytówka:</li>
-				<li>XXX</li>
+				<li>https://sr.ht/~marsdprogrammer/</li>
 			</ul>
 		</section>
 		<article>
 			<section>
 				<h1>Doświadczenie zawodowe</h1>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-
+				<p>
+10 years of experience working in IT, with a focus on systems administration
+and network engineering
+				</p>
+				<p>
+10 lat doświadczenia w IT, ze szczególnym uwzględnieniem administracji
+systemami i inżynierii sieci</p>
 			</section>
 			<section>
 				<h1>Umiejętności</h1>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
-				<p>blabla</p>
+				<p>
+Strong technical skills, including experience with
+Windows and Linux operating systems, networking, and virtualization</p>
+				<p>
+Silne umiejętności techniczne, w tym doświadczenie z systemami
+Windows i Linux, sieciami i wirtualizacją</p>
 
 			</section>
 			<section>
 				<h1>Zainteresowania</h1>
+				<p>
+Keeping up with latest trends in IT, learning new technologies,
+and sharing knowledge with others</p>
+				<p>
+Śledzenie najnowszych trendów w IT, poznawanie nowych technologii
+i dzielenie się wiedzą z innymi</p>
+
 			</section>
 			<section>
 				<h1>Charakter</h1>
+				<p>Enthusiastic, adaptable, and always willing to lend a helping hand, especially to less experienced colleagues</p>
+				<p>Entuzjastyczny, elastyczny i zawsze gotowy dopomóc, szczególnie mniej doświadczonym</p>
+
 			</section>
 			<section>
 				<h1>Plan kariery</h1>
+				<p>To continue developing my skills and knowledge in order to stay ahead of the curve in the IT industry</p>
+				<p>Kontynuowanie rozwoju moich umiejętności i wiedzy w celu pozostania o krok do przodu w przemyśle IT</p>
+				
 			</section>
 			<section>
 				<h1>Wyróżnia mnie</h1>
+				<p>Ability to quickly learn and master new technologies; able to effectively communicate complex technical concepts to non-technical staff and management</p>
+				<p>zdolność do szybkiego uczenia się i opanowywania nowych technologii; umiejętność skutecznego przekazywania złożonych koncepcji technicznych osobom nietechnicznym i kadrze zarządzającej</p>
+		
 			</section>
 		</article>
+		<footer>
+			Zgoda na to i tamto
+		</footer>
 	</page>
-	<page size="A4"></page>
-
-
-
-
-
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
-
-
-
-
-
 </body>
 
 </html>

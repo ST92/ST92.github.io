@@ -1,6 +1,3 @@
-body {
-}
-
 #f{
     background: 
         url(https://st92.github.io/static/images/leaves_top.png), 
@@ -57,7 +54,6 @@ section.toptext ul {
 }
 
 #f article section {
-    border: 1px solid red;
   height: max-content;
   box-sizing: border-box;
   width: 50%;
