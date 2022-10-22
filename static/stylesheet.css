@@ -1,63 +1,51 @@
-#f{
-    background: 
-        url(https://st92.github.io/static/images/leaves_top.png), 
+#f {
+    background:
+        url(https://st92.github.io/static/images/leaves_top.png),
         url(https://st92.github.io/static/images/leaves_bottom.png),
-        url(https://st92.github.io/static/images/leaves_side.png);
-        
+        url(https://st92.github.io/static/images/leaves_side.png),
+        white;
+
     background-position: 101% 0px, 0px 101%, 101% 60%;
     background-repeat: no-repeat;
-    background-size: 50% auto, 100% auto, 3cm auto ;
-}
+    background-size: 50% auto, 100% auto, 3cm auto;
 
-.toptext {
-    padding-top: .5cm;
-    display: block;
-    width: 50%;
-    height: 6cm;
-}
-
-section.toptext ul {
-    margin: 0;
-    padding: 0;
-}
-
-.toptext li {
-    float: left;
-    list-style: none;
-}
-
-.toptext li:nth-child(2n-1) {
-    clear: left;
-    font-weight: bold;
-}
-
-.toptext li:nth-child(2n) {
-    padding-left: .3em;
-}
-
-#f {
     padding-left: 1.5cm;
     padding-right: 1.5cm;
 }
 
+#f article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    place-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1cm;
+    height: 19cm;
+}
+
+#f article section {
+    height: max-content;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 0;
+}
+
 #f article section h1 {
-    background: gray;
-    border: 3px solid gray;
+    background: lightslategray;
+    border: 3px solid lightslategray;
     border-radius: 7px;
     padding-left: 1em;
     line-height: 30px;
     /* display: flex; */
     z-index: 101;
     position: relative;
-    margin-right: 1cm;
+    margin-right: 2cm;
     margin-top: 0px;
 }
 
-#f article section {
-  height: max-content;
-  box-sizing: border-box;
-  width: 50%;
-    margin: 0 0;
+#f article section ul {
+    list-style: square;
+    margin-left: -.5cm;
 }
 
 #f article section:first-child::before {
@@ -75,13 +63,124 @@ section.toptext ul {
     transform: translateX(-16mm) translateY(-15mm);
 }
 
-#f article {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    place-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 1cm;
-    height: 20cm;
+#f article section:first-child ul {
+    padding-right: 1cm;
 }
+
+@media print {
+    #f article section h1 {
+        background: white;
+        border: 2px solid black;
+    }
+}
+
+.toptext {
+    padding-top: .5cm;
+    display: block;
+    width: 50%;
+    height: 6cm;
+}
+
+.toptext h1 {
+    font-size: xx-large;
+}
+
+.toptext ul {
+    margin: 0;
+    padding: 0;
+    font-size: x-large;   
+}
+
+.toptext li {
+    float: left;
+    list-style: none;
+}
+
+.toptext li:nth-child(2n-1) {
+    clear: left;
+    font-weight: bold;
+    min-width: 4cm;
+}
+
+.toptext li:nth-child(2n) {
+    padding-left: .3em;
+}
+
+body {
+    background: rgb(230, 230, 230);
+}
+
+page {
+    /* background: white; */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    font-size: small;
+}
+
+@media print {
+    body,
+    page {
+        margin: 0;
+        box-shadow: none;
+        background-color: white;
+    }
+
+    #f {
+        background:
+        url(https://st92.github.io/static/images/leaves_top.png),
+        white !important;
+
+        background-position: 101% 0px !important;
+        background-size: 50% auto !important;
+        background-repeat: no-repeat !important;
+        background-blend-mode: luminosity;
+    }
+
+    #f article section:first-child::before {
+        display: none;
+    }
+
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+}
+
+page[size="A3"][layout="landscape"] {
+    width: 42cm;
+    height: 29.7cm;
+}
+
+page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+}
+
+page[size="A5"][layout="landscape"] {
+    width: 21cm;
+    height: 14.8cm;
+}
+
+.utrudniacz {
+    color: rgb(230, 230, 230);
+    width: 0em !important;
+    display: inline-block;
+    content: "";
+}
+

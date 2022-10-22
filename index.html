@@ -4,79 +4,8 @@
 
 	<meta charset="UTF-8">
 
-	<title>CodePen - A4 CSS page template</title>
-	<link rel="stylesheet" href="static/stylesheet.css"/>
-
-	<style>
-		body, page {
-			margin: 0;
-			box-shadow: 0;
-		}
-
-		body {
-			background: rgb(204, 204, 204);
-		}
-
-		page {
-			background: white;
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 0.5cm;
-			box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-		}
-
-		page[size="A4"] {
-			width: 21cm;
-			height: 29.7cm;
-		}
-
-		page[size="A4"][layout="landscape"] {
-			width: 29.7cm;
-			height: 21cm;
-		}
-
-		page[size="A3"] {
-			width: 29.7cm;
-			height: 42cm;
-		}
-
-		page[size="A3"][layout="landscape"] {
-			width: 42cm;
-			height: 29.7cm;
-		}
-
-		page[size="A5"] {
-			width: 14.8cm;
-			height: 21cm;
-		}
-
-		page[size="A5"][layout="landscape"] {
-			width: 21cm;
-			height: 14.8cm;
-		}
-
-		.utrudniacz {
-			color: rgb(204, 204, 204);
-			width: 0em;
-			display: inline-block;
-		}
-
-		@media print {
-
-			body,
-			page {
-				margin: 0;
-				box-shadow: 0;
-				background-color: white;
-			}
-			.utrudniacz {
-				color: white;
-				width: 0em !important;
-				content: "";
-			}
-		}
-	</style>
-
+	<title>Życiorys kandydata - Marek Spociński</title>
+	<link rel="stylesheet" href="static/stylesheet.css" />
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -86,74 +15,82 @@
 <body translate="no">
 	<page size="A4" id="f">
 		<section class="toptext">
-			<h1 style="
-	  padding-bottom: 1.5cm;
-  ">Marek Spociński</h1>
+			<h1>Życiorys</h1>
 			<ul>
-				<li>Urodzony:</li>
-				<li>11 1992</li>
+				<li>Imię i nazwisko:</li>
+				<li>Marek Spociński</li>
 				<li>Zamieszkały:</li>
 				<li>Gdynia</li>
-				<li>Numer tel:</li>
-				<li>665<span class="utrudniacz">&dollar;</span>022<span class="utrudniacz">&AElig;</span>688</li>
-				<li>Adres mail:</li>
-				<li>m<span class="trudniacz">ar.</span>eksp92+<span class="trudniacz">sie</span><span class="utrudniacz">wie</span>@gmail.com</li>
-				<li>Wizytówka:</li>
-				<li>https://sr.ht/~marsdprogrammer/</li>
+				<li>Telefon kom.:</li>
+				<li>665 022 688</li>
+				<li>Adres poczty:</li>
+				<li>mareksp92<span class="utrudniacz">+aplikacjacv</span>@gmail.com</li>
+				
 			</ul>
 		</section>
 		<article>
 			<section>
 				<h1>Doświadczenie zawodowe</h1>
+				<ul>
+					<li>3 lata zawodowego doświadczenia w programowaniu komputerów </li>
+					<li>1 rok w polsko-niemiecko-indyjskim zespole programistycznym</li>
+					<li>wiele samodzielnych projektów (aplikacje, oprogramowanie stanowisk produkcyjnych, inteligentny
+						dom)</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Edukacja</h1>
+				<ul><li>
+					Ukończone 2 lata kierunku Automatyka i Robotyka na Akademii Marynarki Wojennej
+				</li></ul>
+			</section>
+			<section>
+				<h1>Umiejętności językowe</h1>
 				<p>
-10 years of experience working in IT, with a focus on systems administration
-and network engineering
+				<ul>
+					<li>J. angielski w piśmie perfekcyjny </li>
+					<li>J. angielski w mowie bardzo dobry</li>
+					<li>Zrozumienie J. angielskiego perfekcyjne </li>
+				</ul>
 				</p>
-				<p>
-10 lat doświadczenia w IT, ze szczególnym uwzględnieniem administracji
-systemami i inżynierii sieci</p>
-			</section>
-			<section>
-				<h1>Umiejętności</h1>
-				<p>
-Strong technical skills, including experience with
-Windows and Linux operating systems, networking, and virtualization</p>
-				<p>
-Silne umiejętności techniczne, w tym doświadczenie z systemami
-Windows i Linux, sieciami i wirtualizacją</p>
 
 			</section>
 			<section>
-				<h1>Zainteresowania</h1>
-				<p>
-Keeping up with latest trends in IT, learning new technologies,
-and sharing knowledge with others</p>
-				<p>
-Śledzenie najnowszych trendów w IT, poznawanie nowych technologii
-i dzielenie się wiedzą z innymi</p>
+				<h1>Umiejętności techniczne</h1>
+				<ul>
+					<li>B. dobra znajomość elektroniki cyfrowej</li>
+					<li>Podstawowa znajomość elektroniki analogowej </li>
+					<li>Umiejętność bezpiecznego obchodzenia się z prądem</li>
+					<li>Praktyczna znajomość elektryki </li>
+					<li>Podążanie za rysunkiem technicznym lub specyfikacją </li>
+					<li>Umiejętność sporządzania dokumentacji technicznej</li>
+					<li>Praktyczne doświadczenie w programowaniu mikrokontrolerów</li>
+					<li>Umiejętność programowania niskopoziomowego oraz PLC</li>
+					<li>Analiza układów elektrycznych i elektronicznych</li>
+					<li>Umiejętność analizy złożonych systemów </li>
+					<li>Dobre teoretyczne podstawy fizyki i matematyki</li>
+					<li>Dość dobra znajomość zagadnień chemii </li>
+					<li>B. dobra znajomość języka angielskiego technicznego i naukowego </li>
+					<li>Znajomość zagadnień elektryki, elektroniki i fizyki, również po angielsku </li>
+					<li>Umiejętność przekazywania wiedzy osobom nietechnicznym</li>
+				</ul>
 
 			</section>
 			<section>
-				<h1>Charakter</h1>
-				<p>Enthusiastic, adaptable, and always willing to lend a helping hand, especially to less experienced colleagues</p>
-				<p>Entuzjastyczny, elastyczny i zawsze gotowy dopomóc, szczególnie mniej doświadczonym</p>
-
-			</section>
-			<section>
-				<h1>Plan kariery</h1>
-				<p>To continue developing my skills and knowledge in order to stay ahead of the curve in the IT industry</p>
-				<p>Kontynuowanie rozwoju moich umiejętności i wiedzy w celu pozostania o krok do przodu w przemyśle IT</p>
-				
-			</section>
-			<section>
-				<h1>Wyróżnia mnie</h1>
-				<p>Ability to quickly learn and master new technologies; able to effectively communicate complex technical concepts to non-technical staff and management</p>
-				<p>zdolność do szybkiego uczenia się i opanowywania nowych technologii; umiejętność skutecznego przekazywania złożonych koncepcji technicznych osobom nietechnicznym i kadrze zarządzającej</p>
-		
+				<h1>Charakter kandydata</h1>
+				<ul>
+					<li>Wysoka kultura w mowie i piśmie </li>
+					<li>Dobrze pracuje w zespole </li>
+					<li>Bardzo dobrze pracuje samodzielnie </li>
+					<li>Nastawienie na osiągnięcie celu </li>
+					<li>Dbałość o szczegóły </li>
+					<li>Szybko i efektywnie uczy się nowych rzeczy</li>
+				</ul>
 			</section>
 		</article>
 		<footer>
-			Zgoda na to i tamto
+			<p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+			<p>Wyrażam też zgodę na przetwarzanie moich danych osobowych w zakresie przyszłych procesów rekrutacyjnych.</p>
 		</footer>
 	</page>
 </body>
