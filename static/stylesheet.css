@@ -1,15 +1,6 @@
-<<<<<<< HEAD
 #f {
     background:
         url(https://st92.github.io/static/images/leaves_top.png),
-=======
-body {
-}
-
-#f{
-    background: 
-        url(https://st92.github.io/static/images/leaves_top.png), 
->>>>>>> parent of 097133b... IT stuff coded in
         url(https://st92.github.io/static/images/leaves_bottom.png),
         url(https://st92.github.io/static/images/leaves_side.png),
         white;
@@ -127,17 +118,8 @@ page {
     box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< HEAD
 footer {
     font-size: small;
-=======
-#f article section {
-    border: 1px solid red;
-  height: max-content;
-  box-sizing: border-box;
-  width: 50%;
-    margin: 0 0;
->>>>>>> parent of 097133b... IT stuff coded in
 }
 
 @media print {
