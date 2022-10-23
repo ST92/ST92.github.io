@@ -184,3 +184,17 @@ page[size="A5"][layout="landscape"] {
     content: "";
 }
 
+#profile-photo {
+    position: absolute;
+    height: 4cm;
+    filter: grayscale(1);
+    border: dotted 1px lightgray;
+    image-rendering: pixelated;
+    transform: translateX(7cm) scale(1.2);
+}
+
+@media print {
+    #profile-photo {
+        filter: grayscale(1) brightness(2.0) !important;
+    }
+}
